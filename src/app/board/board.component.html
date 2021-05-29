@@ -1,0 +1,20 @@
+<!-- <body> -->
+<div>
+    <h1>Current Player: {{ player }} </h1>
+
+    <button (click)="newGame()" type="button" class="btn btn-outline-primary mb-2"> Start New Game</button>
+
+    <h2 *ngIf="winner">
+        Player {{ winner }} wins the game !!
+    </h2>
+
+
+    <main>
+        <app-square *ngFor="let sq of squares; let i = index" [value]="sq" (click)="makeMove(i)">
+            <!-- <h2 *ngIf='winner.length===0 && i==squares.length-1'>
+        Oops !! No Winner in this game..
+    </h2> -->
+        </app-square>
+    </main>
+</div>
+<!-- </body> -->

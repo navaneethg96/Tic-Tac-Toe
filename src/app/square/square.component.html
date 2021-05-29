@@ -1,0 +1,8 @@
+<!-- <button> {{value}} </button> -->
+
+<!-- <p style="text-align: center;"> {{ value }} </p> -->
+
+
+<button *ngIf="!value"> {{ value }} </button>
+<button type="button" class="btn btn-primary" *ngIf="value==='X'"> {{ value }} </button>
+<button type="button" class="btn btn-success" *ngIf="value==='O'"> {{ value }} </button>
